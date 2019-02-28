@@ -9,15 +9,14 @@ from bs4 import BeautifulSoup
 from Content import content
 from datetime import date
 
-year = int(input())
-
 def check(year):
     check = year >= 2010 and year <= 2019
     if check == False:
         print("Enter year between 2010 and 2019")
         year = int(input())
         check(year)
-
+        
+year = int(input())
 check(year)
 
 for y in range(0,12):
