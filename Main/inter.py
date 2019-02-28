@@ -9,7 +9,16 @@ from bs4 import BeautifulSoup
 from Content import content
 from datetime import date
 
-year = 2011
+year = int(input())
+
+def check(year):
+    check = year >= 2010 and year <= 2019
+    if check == False:
+        print("Enter year between 2010 and 2019")
+        year = int(input())
+        check(year)
+
+check(year)
 
 for y in range(0,12):
     if y!=11:
@@ -63,6 +72,6 @@ for y in range(0,12):
                 final_links[j] = l1[i]
                 j = j + 1
     print(headings)
-    content(final_links, headings, y)
+    content(final_links, headings, y, year)
 
 

@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
 
-def content(link, text, m):
+def content(link, text, m, year):
     for i in range(len(link)):
         l = link[i].split(":")
         link[i] = l[0] + 's:' + l[1]
@@ -31,7 +31,7 @@ def content(link, text, m):
             content1[i] = "HTTPError404: URL either moved or removed by the agency"    
 
             
-    name = "2011_" + str(m) + ".xlsx"
+    name = str(year) + "_" + str(m) + ".xlsx"
     if(len(content1)!=len(link)):
         d = len(content1) - len(link)
         content1 = content1[:-d or None]
