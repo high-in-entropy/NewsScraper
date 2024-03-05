@@ -10,4 +10,3 @@ Well yes there are APIs available which do the same task but all of them charge 
 
 And all those things which come to your mind when we are studying articles which are let's say decades old! 
 
-Like what I do? Follow me on [Twitter](https://twitter.com/high_in_entropy) or connect with me on [LinkedIn](https://www.linkedin.com/in/viraj-mohile-70560b157/)!
